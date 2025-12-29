@@ -1,0 +1,24 @@
+.footer-container{
+    padding: 0 1.2rem 0 1.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-thing{
+    font-size: 1.6rem;
+    opacity: 50%;
+}
+
+@media (max-width: 437px){
+    .footer-container{
+        font-size: 1.4rem;
+        padding: 0 0.7rem 0 0.7rem;
+    }
+
+    .footer-thing{
+        font-size: 0.9rem;
+        opacity: 50%;
+    }
+}

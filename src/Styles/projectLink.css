@@ -1,0 +1,41 @@
+.pr-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+    margin-top: 1.1rem;
+}
+
+.pr-link{
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    justify-content: center;
+
+    width: fit-content;
+
+    font-size: 1.8rem;
+}
+
+.pr-link, .pr-link-a{
+    display: flex;
+    align-items: center;
+}
+
+.pr-link-a{
+    gap: 0.4rem;
+    justify-content: space-between;
+}
+
+@media (max-width: 437px){
+    .pr-link{
+        font-size: 1.4rem;
+    }
+
+    .pr-link > svg{
+        width: 4rem;
+        height: 4rem;
+    }
+}

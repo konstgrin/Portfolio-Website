@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+}
+
+#root{
+    animation: fadeInFromNone 0.5s ease-out;
+    font-family: "Akrobat Regular";
+}
+
+@keyframes fadeInFromNone{
+    0% {
+        top: 3rem;
+        opacity: 60%;
+        filter: blur(15px);
+    }
+
+    100% {
+        opacity: 100%;
+        top: 0rem;
+        filter: blur(0);
+    }
+}
+
+svg{
+    user-select: none;
+}
+
+/* Да простит меня Господь, что спиздил с ии гугла скрытие скролл бара🙏 */
+html {
+  /* For Internet Explorer and Edge */
+  -ms-overflow-style: none;
+  /* For Firefox */
+  scrollbar-width: none;
+  /* Add overflow-y: scroll; to ensure scrolling on the y-axis is possible */
+  overflow-y: scroll; 
+}
+
+/* For Chrome, Safari, and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+/* аминь */
+
+.center{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+.grid-container > * {
+    min-width: 0;
+}
+
+#root{
+    backdrop-filter: blur(30px);
+}
+
+*{
+    position: relative;
+}
+
+.blop{
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    
+    border-radius: 100%;
+
+    width: 5rem;
+    height: 5rem;
+
+    filter: blur(60px);
+
+    background-color: red;
+}
+
+ .projects-container-two, [class$="-container"]:not(.grid-container){
+    border: 3px solid rgba(224, 224, 224, 0.3);
+    border-radius: 10px;
+
+    background-color: rgb(236, 236, 236, 0.3);
+}
+
+.grid-container > [class$="-container"]:hover, .link:hover, .project:hover, .slider > svg:hover, .projects-container-two:hover{
+    transform: scale(1.01);
+}
+
+.pr-link:hover{
+    transform: scale(1.02);
+}
+
+.slider > svg:hover {
+    transform: scale(1.1);
+}
+
+.grid-container > [class$="-container"], .link, .project, .slider > svg, .projects-container-two, .pr-link {
+    transition: transform 0.1s ease;
+}
+
+.grid-container{
+    font-size: 2.3rem;
+    margin: 1.4rem auto;
+
+    max-width: 100rem;
+
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+        "about-me about-me about-me skills skills"
+        "about-me about-me about-me skills skills" 
+        "about-me about-me about-me skills skills" 
+        "about-me about-me about-me skills skills" 
+        "projects projects projects skills skills" 
+        "projects projects projects links links" 
+        "footer footer footer footer footer"; 
+
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.headerText{
+    font-size: 2rem;
+    font-family: "JetBrainsMono Light";
+
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.about-me-container{
+    grid-area: about-me;
+}
+
+.skills-container{
+    grid-area: skills;
+}
+
+.projects-container{
+    grid-area: projects;
+}
+
+.links-container{
+    grid-area: links;
+}
+
+.spotify-container{
+    grid-area: spotify;
+}
+
+.footer-container{
+    grid-area: footer;
+}
+
+.projects-container-two{
+    display: none;
+    grid-area: projects2;
+}
+
+@media (max-width: 1080px){
+    .grid-container{
+        font-size: 2.3rem;
+        width: 90vw;
+
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: 
+            "about-me"
+            "links"
+            "skills" 
+            "projects2" 
+            "footer"; 
+
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container{
+        display: none;
+    }
+
+    .link{
+        width: 30%;
+    }
+
+    .projects-container-two{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+
+        padding: 1.2rem;
+    }
+}

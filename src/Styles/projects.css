@@ -1,0 +1,70 @@
+.projects-container{
+    padding: 1.2rem;
+}
+
+.project{
+    margin-top: 1rem;
+
+    border: 3px solid gainsboro;
+    border-radius: 1rem;
+    padding: 0.6rem;   
+}
+
+.project-description{
+    margin: 0.1rem 0 0.6rem 0;
+}
+
+.idkreally{
+    display: flex;
+    align-items: center;
+}
+
+.project-name{
+    font-size: 3.5rem;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+
+    border: 1px solid black;
+    border-radius: 10%;
+
+    padding: 0.2rem;
+}
+
+
+.tags{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    font-size: 1.6rem;
+
+    margin: 0.1rem 0 0.1rem 0;
+    padding: 0.4rem 0 0.4rem 0;
+}
+
+@media (max-width: 437px){
+    .tags{
+        font-size: 1.5rem;
+    }
+
+    .icon{
+        display: block;
+    }
+
+    .link-name{
+        font-size: 1.2rem;
+    }
+}
