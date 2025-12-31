@@ -4,7 +4,7 @@ import '../Fonts/JetBrainsMono-2.304/fonts/style.css'
 
 import AboutMe from './AboutMe';
 import Skills from './Skills';
-import Projects from './Projects';
+import Projects from './Projects.jsx';
 import ProjectsTwo from './ProjectsTwo';
 import Links from './Links';
 import Spotify from './Spotify';

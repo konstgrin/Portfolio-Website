@@ -1,5 +1,6 @@
 import "../Styles/skills.css"
 import { IoLogoReact, IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io5";
+import { BiLogoTypescript } from "react-icons/bi";
 
 function Logo({ data }) {
     return (
@@ -33,5 +34,9 @@ const skillsArray = [
     {
         name: 'Frontend',
         list: [{ name: "React", logo: <IoLogoReact size={70} color={"39D7F6"}/> }, { name: "JavaScript", logo: < IoLogoJavascript size={70} color={"F2F924"} /> }, { name: "HTML", logo: <IoLogoHtml5 size={70} color={"FF2E2E"} /> }, {name: "CSS", logo: <IoLogoCss3 size={70} color={"39D7F6"} /> }]
+    },
+    {
+        name: 'In progress',
+        list: [{ name: "Typescript", logo: <BiLogoTypescript size={70} color={"#0db2ffff"}/> }]
     },
 ]

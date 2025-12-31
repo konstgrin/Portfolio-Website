@@ -1,5 +1,6 @@
 import "../Styles/projects.css"
-import { Project } from "./Projects"
+import { Project } from "./Projects.jsx"
+import { projects } from './projectsArray.ts';
 
 export default function ProjectsTwo() {
     return (
@@ -11,18 +12,3 @@ export default function ProjectsTwo() {
         </div>
     )
 }
-
-const projects = [
-    {
-        'name': "Personal Visit-Card Website",
-        'description': "Ja pidoras. Прям знаете, совсем нахуй конченный пидорас. А ещё я долбаёб и возможно пидор. Стоп, чё значит возможно, но вы поняли",
-        'tags': ['react.js'],
-        'href': 'https://www.youtube.com/watch?v=PkT0PJwy8mI'
-    },
-    {
-        'name': "GOVNO 2.0",
-        'description': "Ja pidoras. Прям знаете, совсем нахуй конченный пидорас. А ещё я долбаёб и возможно пидор. Стоп, чё значит возможно, но вы поняли",
-        'tags': ['react.js', 'react.js', 'react.js'],
-        'href': 'https://www.youtube.com/watch?v=PkT0PJwy8mI'
-    }
-]

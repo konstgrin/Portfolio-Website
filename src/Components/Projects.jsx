@@ -6,8 +6,8 @@ import { TbPoint, TbPointFilled } from "react-icons/tb";
 import "../Styles/projects.css"
 import "../Styles/projectLink.css"
 import LinkForProjects from "./LinkForProjects";
+import { projects } from './projectsArray.ts';
 
-let i = 0;
 function Tag({ name }) {
     const icon = (() => {
         switch (name) {
@@ -25,6 +25,7 @@ function Tag({ name }) {
 }
 
 function Project({ data }) {
+    let i = 0;
     return (
         <div className="project">
             <p className="project-name"><span className="blop" style={{top: "-2rem", background: "#00e1ff", width: "5rem", height: "5rem"}}></span>{data.name}</p>
@@ -68,15 +69,6 @@ export default function Projects() {
     )
 }
 
-
-const projects = [
-    {
-        'name': "Personal Visit-Card Website",
-        'description': "Personal portfolio website I made using React.js. The first of many (I hope).",
-        'tags': ['react.js'],
-        'href': 'https://www.youtube.com/watch?v=PkT0PJwy8mI'
-    },
-]
 
 export {
     Project

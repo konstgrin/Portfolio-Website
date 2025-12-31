@@ -63,13 +63,13 @@ html::-webkit-scrollbar {
 
 .blop{
     position: absolute;
-    top: -2rem;
+    top: -1rem;
     left: 2rem;
     
     border-radius: 100%;
 
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 
     filter: blur(60px);
 
