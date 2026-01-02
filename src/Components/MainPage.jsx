@@ -1,4 +1,5 @@
 import '../Styles/mainPage.css'
+
 import '../Fonts/Akrobat/style.css'
 import '../Fonts/JetBrainsMono-2.304/fonts/style.css'
 

@@ -25,13 +25,13 @@ export default async function weatherReport() {
         `\nTimezone difference to GMT+0: ${utcOffsetSeconds}s`,
     );
 
-    const current = response.current();
+    const current = response.current()!;
 
     // Note: The order of weather variables in the URL query and the indices below need to match!
     const weatherData = {
         current: {
-            temperature_2m: current.variables(0).value(),
-            weather_code: current.variables(1).value(),
+            temperature_2m: current.variables(0)!.value(),
+            weather_code: current.variables(1)!.value(),
         },
     };
 
