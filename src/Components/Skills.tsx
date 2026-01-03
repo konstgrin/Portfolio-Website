@@ -2,7 +2,14 @@ import "../Styles/skills.css"
 import { IoLogoReact, IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
 
-function Logo({ data }) {
+type logoData = {
+    data: {
+        name: string,
+        logo: React.ReactNode,
+    },
+}
+
+function Logo({ data } : logoData) {
     return (
         <div className="logo-and-name">
             {data.logo}

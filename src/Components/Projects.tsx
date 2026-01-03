@@ -5,10 +5,10 @@ import { TbPoint, TbPointFilled } from "react-icons/tb";
 
 import "../Styles/projects.css"
 import "../Styles/projectLink.css"
-import LinkForProjects from "./LinkForProjects";
+import LinkForProjects from "./LinkForProjects.tsx";
 import { projects } from './projectsArray.ts';
 
-function Tag({ name }) {
+function Tag({ name } : { name: string }) {
     const icon = (() => {
         switch (name) {
             case 'react.js':
@@ -24,7 +24,16 @@ function Tag({ name }) {
     )
 }
 
-function Project({ data }) {
+type dataForProject = {
+    data: {
+        name: string,
+        description: string,
+        tags: Array<string>,
+        href: string,
+    },
+}
+
+function Project({ data } : dataForProject) {
     let i = 0;
     return (
         <div className="project">

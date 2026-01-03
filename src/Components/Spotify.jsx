@@ -1,7 +1,8 @@
 import "../Styles/spotify.css"
 
-export default function Spotify(){
+// It's empty anyway :D
 
+export default function Spotify(){
     return (
         <div className="spotify-container">
             spotify

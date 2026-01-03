@@ -9,9 +9,9 @@ const options = {
     hour: 'numeric',
     minute: 'numeric',
     second: 'numeric',
-};
+} satisfies Intl.DateTimeFormatOptions;
 
-const weatherCodes = {
+const weatherCodes : Record<number, string> = {
   0: "Clear sky",
   1: "Mainly clear",
   2: "Partly cloudy",
@@ -35,7 +35,7 @@ const weatherCodes = {
 export default function AboutMe() { 
     let date = new Date();
     const [currentDate, setCurrentDate] = useState(date.toLocaleString('en-US', options) + " GMT+3");
-    const [currentWeather, setCurrentWeather] = useState(null);
+    const [currentWeather, setCurrentWeather] = useState("");
 
     useEffect(() => {
         const id = setInterval(() => {

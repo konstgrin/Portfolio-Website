@@ -1,5 +1,5 @@
 import "../Styles/projects.css"
-import { Project } from "./Projects.jsx"
+import { Project } from "./Projects.js"
 import { projects } from './projectsArray.ts';
 
 export default function ProjectsTwo() {

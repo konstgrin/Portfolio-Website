@@ -1,6 +1,10 @@
 import { FaGithub } from "react-icons/fa";
 
-export default function LinkForProjects({ link }) {
+type linkProp = {
+    link: string;
+}
+
+export default function LinkForProjects({ link }: linkProp) {
     return (
         <div className="pr-link">
             <a href={link} className="pr-link-a">

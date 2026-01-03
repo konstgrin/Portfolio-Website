@@ -1,7 +1,14 @@
+import React from "react";
 import "../Styles/links.css"
 import { FaSpotify, FaGithub, FaDiscord } from "react-icons/fa";
 
-function Link({ href, name, icon }) {
+type linkProps = {
+    href: string,
+    name: string,
+    icon: React.ReactNode
+}
+
+function Link({ href, name, icon } : linkProps) {
     return (
         <div className="link">
             <a href={href} className="link-a">
