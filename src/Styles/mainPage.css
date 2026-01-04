@@ -1,10 +1,35 @@
 *{
     margin: 0;
+    position: relative;
+}
+
+:root{
+    --primary-text-color: rgb(0, 0, 0);
+    --primary-border-color: rgba(224, 224, 224, 0.3);
+    --project-bg-color: rgb(236, 236, 236, 0.3);
+    --primary-bg-color: rgb(255, 255, 255);
+    --other-border-color: rgb(0, 0, 0);
+    --project-border-color: rgb(220, 220, 220);
+}
+
+[data-theme="dark"]{
+    --primary-text-color: rgb(255, 255, 255);
+    --primary-border-color: rgba(31, 31, 31, 0.3);
+    --project-bg-color: rgba(36, 36, 36, 0.3);
+    --primary-bg-color: rgb(39, 39, 39);
+    --other-border-color: rgb(255, 255, 255);
+    --project-border-color: rgb(121, 121, 121);   
 }
 
 #root{
     animation: fadeInFromNone 0.5s ease-out;
     font-family: "Akrobat Regular";
+    backdrop-filter: blur(30px);
+}
+
+body{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color)
 }
 
 @keyframes fadeInFromNone{
@@ -53,14 +78,6 @@ html::-webkit-scrollbar {
     min-width: 0;
 }
 
-#root{
-    backdrop-filter: blur(30px);
-}
-
-*{
-    position: relative;
-}
-
 .blop{
     position: absolute;
     top: -1rem;
@@ -77,10 +94,10 @@ html::-webkit-scrollbar {
 }
 
  .projects-container-two, [class$="-container"]:not(.grid-container){
-    border: 3px solid rgba(224, 224, 224, 0.3);
+    border: 3px solid var(--project-border-color);
     border-radius: 10px;
 
-    background-color: rgb(236, 236, 236, 0.3);
+    background-color: var(--project-bg-color);
 }
 
 .grid-container > [class$="-container"]:hover, .link:hover, .project:hover, .slider > svg:hover, .projects-container-two:hover{
@@ -91,11 +108,11 @@ html::-webkit-scrollbar {
     transform: scale(1.02);
 }
 
-.slider > svg:hover {
+.slider > svg:hover, .themeSwitcher:hover {
     transform: scale(1.1);
 }
 
-.grid-container > [class$="-container"], .link, .project, .slider > svg, .projects-container-two, .pr-link {
+.grid-container > [class$="-container"], .link, .project, .slider > svg, .projects-container-two, .pr-link, .themeSwitcher {
     transition: transform 0.1s ease;
 }
 
@@ -124,13 +141,13 @@ html::-webkit-scrollbar {
     font-family: "JetBrainsMono Light";
 
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--other-border-color);
     padding-bottom: 0.2rem;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--primary-text-color);
 }
 
 .about-me-container{

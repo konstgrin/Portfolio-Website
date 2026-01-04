@@ -1,0 +1,38 @@
+.themeSwitcher{
+    padding: 0.6rem;
+    border: 3px solid var(--other-border-color);
+    border-radius: 1.3rem;
+
+    font-size: 1.6rem;
+}
+
+.center > .themeSwitcher{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.headerText > .themeSwitcher{
+    display: none;
+
+    padding: 0.3rem;
+    border: 3px solid var(--other-border-color);
+    border-radius: 0.9rem;
+
+    font-size: 1rem;
+}
+
+.about-me-container > .headerText{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1080px){
+    .center > .themeSwitcher{
+        display: none;    
+    }
+
+    .headerText > .themeSwitcher{
+        display: block;
+    }
+}

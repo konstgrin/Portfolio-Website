@@ -6,7 +6,7 @@
     width: 13rem;
     height: 13rem;
 
-    border: 2px solid black;
+    border: 2px solid var(--other-border-color);
     border-radius: 100%;
 }
 

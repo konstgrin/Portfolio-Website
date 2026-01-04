@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "../Styles/aboutme.css"
 import weatherReport from "./weather";
+import ThemeSwitch from "./ThemeSwitch";
 
 const options = {
     timeZone: 'Europe/Minsk',
@@ -64,7 +65,7 @@ export default function AboutMe() {
 
     return (
         <div className="about-me-container">
-            <p className="headerText">AboutMe.jsx</p>
+            <div className="headerText">AboutMe.jsx {<ThemeSwitch />}</div>
             <div className="header">
                 <img src="https://avatars.githubusercontent.com/u/67631845?v=4" className="pfp" />
                 <div className="header-info">

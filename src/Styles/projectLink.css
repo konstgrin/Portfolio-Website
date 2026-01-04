@@ -9,7 +9,7 @@
 
 .pr-link{
     padding: 0.8rem;
-    border: 1px solid black;
+    border: 1px solid var(--other-border-color);
     border-radius: 5px;
 
     justify-content: center;
