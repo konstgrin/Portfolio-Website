@@ -11,9 +11,19 @@ import Links from './Links.js';
 // import Spotify from './Spotify.jsx';
 import Footer from './Footer.tsx';
 import ThemeSwitch from './ThemeSwitch.tsx';
+
 import { useEffect } from 'react';
+import isEven from 'is-even';
+import isOdd from 'is-odd';
 
 export default function MainPage() {
+    useEffect(() => {
+        const randomNumber = Math.floor(Math.random() * 10);
+        
+        if (isEven(randomNumber)) console.log(`${randomNumber} is Even? ${!isOdd(randomNumber)}`)
+        else console.log(`${randomNumber} is Even? ${isEven(randomNumber)}`)
+    }, [])
+
     return (
         <div className="center">
             <ThemeSwitch />
