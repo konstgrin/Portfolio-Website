@@ -1,0 +1,79 @@
+.reviewCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    width: 100%;
+    aspect-ratio: 15 / 7;
+    
+    border-radius: 10px;
+    border: 5px solid var(--reviews-elements-border-color);
+    background-color: var(--reviews-elements-bg-color);
+    color: var(--primary-text-color);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    padding: 0;
+}
+
+.reviewCard:hover{
+    animation: scaleYopta 0.01s ease-in-out both;
+}
+
+@keyframes scaleYopta {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.02);
+    }
+}
+
+.rating{
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    padding: 0.4rem;
+
+    font-family: "JetBrainsMono Light";
+    font-size: 1.4rem;
+
+    border: 3px solid var(--reviews-elements-border-color);
+    background-color: var(--reviews-elements-bg-color);
+    border-radius: 10px;
+}
+
+.bottomSection{
+    border-top: 3px solid var(--reviews-elements-border-color);
+    background-color: var(--reviews-elements-bg-color);
+
+    aspect-ratio: 15 / 2;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1.3rem;
+    font-family: "JetBrainsMono Light";
+    padding: 0.4rem 0.7rem;
+}
+
+.cardThing{
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewsGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-template-columns: 1fr; */
+    gap: 1rem;
+}
+
+.rcImage{
+    border-radius: 7px 7px 0 0;
+}

@@ -10,6 +10,9 @@
     --primary-bg-color: rgb(255, 255, 255);
     --other-border-color: rgb(0, 0, 0);
     --project-border-color: rgb(220, 220, 220);
+
+    --reviews-elements-bg-color:rgb(235, 235, 235);
+    --reviews-elements-border-color:rgb(212, 212, 212);
 }
 
 [data-theme="dark"]{
@@ -18,7 +21,11 @@
     --project-bg-color: rgba(36, 36, 36, 0.3);
     --primary-bg-color: rgb(39, 39, 39);
     --other-border-color: rgb(255, 255, 255);
-    --project-border-color: rgb(121, 121, 121);   
+    --project-border-color: rgb(121, 121, 121);
+    
+    --reviews-elements-bg-color:rgb(46, 46, 46); 
+    --reviews-elements-border-color:rgb(69, 69, 69);
+    --reviews-elements-hover-border-color:rgb(97, 97, 97);
 }
 
 #root{

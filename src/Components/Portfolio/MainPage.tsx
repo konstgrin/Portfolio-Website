@@ -1,0 +1,39 @@
+import '../../Styles/mainPage.css'
+
+import '../../Fonts/Akrobat/style.css'
+import '../../Fonts/JetBrainsMono-2.304/fonts/style.css'
+
+import AboutMe from './AboutMe.tsx';
+import Skills from './Skills.tsx';
+import Projects from './Projects.tsx';
+import ProjectsTwo from './ProjectsTwo.tsx';
+import Links from './Links.js';
+import Footer from './Footer.tsx';
+import ThemeSwitch from './ThemeSwitch.tsx';
+
+import { useEffect } from 'react';
+import isEven from 'is-even';
+import isOdd from 'is-odd';
+
+export default function MainPage() {
+    useEffect(() => {
+        const randomNumber = Math.floor(Math.random() * 10);
+        
+        if (isEven(randomNumber)) console.log(`${randomNumber} is Even? ${!isOdd(randomNumber)}`)
+        else console.log(`${randomNumber} is Even? ${isEven(randomNumber)}`)
+    }, [])
+
+    return (
+        <div className="center">
+            <ThemeSwitch />
+            <div className="grid-container">
+                <AboutMe />
+                <Skills />
+                <Projects />
+                <ProjectsTwo />
+                <Links />
+                <Footer />
+            </div>
+        </div>
+    );
+}

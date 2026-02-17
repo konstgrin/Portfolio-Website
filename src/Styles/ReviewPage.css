@@ -1,0 +1,71 @@
+.reviewContainer{
+    width: 100%;
+    grid-column: 2/3;
+
+    border: 3px solid var(--reviews-elements-border-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--reviews-elements-bg-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rpImage{
+    border-bottom: 3px solid var(--reviews-elements-border-color);
+}
+
+.linkBack{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+
+    border: 3px solid var(--reviews-elements-border-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--reviews-elements-bg-color);
+}
+
+.rpOtherBullshit{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 1rem 1rem 1rem;
+    font-size: 2rem;
+}
+
+.rpTitle{
+    font-size: 3rem;
+}
+
+
+.rcTag{
+    border: 3px solid var(--reviews-elements-border-color);
+    background-color: var(--reviews-elements-bg-color);
+    border-radius: 10px;
+
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    font-family: "JetBrainsMono Light";
+}
+
+.tagSection{
+    background-color: var(--reviews-elements-bg-color);
+
+    aspect-ratio: 15 / 2;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    
+    overflow: hidden;
+
+    font-family: "JetBrainsMono Light";
+}
+
+.rpRate{
+    margin-top: 1rem;
+}
