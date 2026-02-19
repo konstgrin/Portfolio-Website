@@ -74,7 +74,7 @@ export default function AboutMe() {
                     <p className="weather">{currentWeather}</p>
                 </div>
             </div>
-            <p className="description">20 y.o. CS student at Gomel State University of Francisk Skaryna. Interested in Front-end Web development. <br />Kinda retarted btw :{">"}</p>
+            <p className="description">20 y.o. jobless dropped out CS student. Interested in Front-end Web development. <br />Kinda retarted btw :{">"}</p>
         </div>
     )
 }

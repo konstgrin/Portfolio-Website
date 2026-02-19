@@ -3,6 +3,7 @@ import MainPage from './src/Components/Portfolio/MainPage'
 import Reviews from './src/Components/Reviews/Reviews'
 import fetchReviews from './src/Components/Reviews/fetchReviews'
 import ReviewPage from './src/Components/Reviews/ReviewPage'
+import ThankYou from './src/Components/ThankYou'
 
 const routes = [
   { index: true, element: <MainPage /> },
@@ -18,6 +19,10 @@ const routes = [
         loader: fetchReviews
       }
     ]
+  },
+  {
+    path: "/thank-you",
+    element: <ThankYou />
   }
 ]
 

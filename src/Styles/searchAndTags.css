@@ -29,7 +29,7 @@
     width: fit-content;
 
     display: flex;
-    height: 4rem;
+    height: auto;
     gap: 0.4rem;
     
     font-family: "JetBrainsMono Light";
@@ -114,4 +114,23 @@
     padding: 1.1rem;
 
     grid-column: 1/2;
+}
+
+@media (max-width: 544px){
+    .reviewsBody{
+        grid-row: 2/3;
+    }
+    .toShowTags, .mediaSelectButton{
+        font-size: 1.73rem;
+        padding: 0.9rem;
+        border-radius: 8px;
+    }
+
+    .mediaSelect{
+        flex-wrap: wrap
+    }
+
+    .searchInput{
+        font-size: 1.8rem;
+    }
 }

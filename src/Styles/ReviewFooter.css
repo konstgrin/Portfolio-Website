@@ -14,3 +14,12 @@
 
     margin-top: auto;
 }
+
+@media (max-width: 544px){
+    .footer{
+        margin-top: 1rem;
+        text-align: center;
+
+        font-size: 1.4rem;
+    }
+}

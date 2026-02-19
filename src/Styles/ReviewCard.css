@@ -69,11 +69,27 @@
 .reviewsGrid{
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* grid-template-columns: 1fr; */
+    grid-template-columns: 3fr;
     gap: 1rem;
+    max-height: fit-content;
+}
+
+.rcExtended{
+    grid-template-columns: 3fr 1fr;
 }
 
 .rcImage{
     border-radius: 7px 7px 0 0;
+    aspect-ratio: 15 / 7;
+}
+
+@media (max-width: 544px){
+    .rcExtended{
+        grid-template-rows: 1fr fit-content;
+        grid-template-columns: 3fr;
+    }
+
+    .rcTitle{
+        font-size: 2rem;
+    }
 }

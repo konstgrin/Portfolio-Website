@@ -16,5 +16,14 @@
         "description": "nigga",
         "tags": ["Roguelike", "Action"],
         "mediaType": "Game"
+    },
+    {
+        "title": "Pulp Fiction",
+        "image": "https://www.film89.co.uk/wp-content/uploads/2017/07/IMG_0572.jpg",
+        "rating": "10",
+        "id": "pulp-fiction",
+        "description": "Divided into 7 parts movie, presented in mixed order, by Quentin Tarantino became the second one in my [X] Filmography Marathon. Inglorious Basterds was something so great I decided I HAVE to watch his other movies and here we are. Starting with a scene in some diner in the sunny state of California with a lovely couple's small talk about how safe it is to rob a cafe. So calm and cozy scene I can kill myself. I really like prologue and epilogue. They feel like great opening and ending for a show. Movie's length is damn 2.5 hours long, but it went so smoothly I didn't even notice it's already almost over. The scene where Jules points his gun at Ringo woke me up. Reference made in Chainsawman Opening 1 instantly came to my mind. I hadn't known it was a reference to this movie until that moment. Really like Winston Wolf and this idiot duo. And really-really like this movie. It goes without (kinda) saying - 10 out of 10.",
+        "tags": ["Comedy", "Action", "Gangster"],
+        "mediaType": "Movie"
     }
 ]

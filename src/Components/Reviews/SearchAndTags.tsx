@@ -80,6 +80,7 @@ export default function SearchAndTags() {
         ],
         "Movie": [
             "Action",
+            "Gangster",
             "Adventure",
             "Drama",
             "Comedy",
@@ -136,11 +137,11 @@ export default function SearchAndTags() {
                 <button className={`mediaSelectButton ${mediaSelect === "Game" ? "checkedTag" : ""}`} onClick={handleMediaSelection}>Game</button>
                 <button className={`mediaSelectButton ${mediaSelect === "Movie" ? "checkedTag" : ""}`} onClick={handleMediaSelection}>Movie</button>
                 <button className={`mediaSelectButton ${mediaSelect === "Anime/Manga" ? "checkedTag" : ""}`} onClick={handleMediaSelection}>Anime/Manga</button>
+                <button className="toShowTags" onClick={() => {
+                    setToShowTags(c => !c);
+                }}>Genres</button>
             </section>
 
-            <button className="toShowTags" onClick={() => {
-                setToShowTags(c => !c);
-            }}>Genres</button>
 
             {toShowTags && <div className="reviewTags">
                 {genres[mediaSelect].map(
@@ -150,9 +151,7 @@ export default function SearchAndTags() {
                 )}
             </div>}
             
-            <div className="reviewsGrid" style={{
-                gridTemplateColumns: `${match ? "3fr 1fr" : "3fr"}`
-            }}>
+            <div className={`reviewsGrid ${match ? "rcExtended" : ""}`}>
                 <div className="reviewsBody">
                     {reviewsElement.length > 0 ? reviewsElement : <h2>It's empty here...</h2>}
                 </div>
